@@ -1,0 +1,11 @@
+<app-barra-navegacao (onToggle) = "menuLateral.toggle()">
+ 
+</app-barra-navegacao>
+<main class="main">
+  <app-menu-lateral #menuLateral >
+    
+  </app-menu-lateral>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</main>

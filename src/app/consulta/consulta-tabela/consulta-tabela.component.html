@@ -1,0 +1,22 @@
+<app-painel-simples titulo = "{{titulo}}" col = "6">
+    <table class="table table-hover" *ngIf = "!erro; else mensagem" >
+        <thead>
+            <tr>
+                <th>Especialidades</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let consulta of consultas">
+                <td>{{consulta.especialidade}}</td>
+                <td>{{consulta.quantidade}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ng-template #mensagem>
+        <h3 class="text-center">
+            Falha na comunicação com o servidor
+        </h3>
+    </ng-template>
+</app-painel-simples>
+    

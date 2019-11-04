@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    overflow: hidden;
+    min-height: calc(100vh - 52px);
+}
+
+.content {
+    width: 100%;
+    padding-top: 10px;
+}
